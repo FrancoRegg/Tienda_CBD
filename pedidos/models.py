@@ -1,4 +1,5 @@
 from django.db import models
+from django.utils import timezone
 
 # Create your models here.
 class Order(models.Model):
@@ -6,7 +7,7 @@ class Order(models.Model):
     shipping_address = models.ForeignKey('usuarios.Address', on_delete=models.SET_NULL, null=True)
     status = models.CharField(max_length=50, default='Pending')
     total = models.DecimalField(max_digits=10, decimal_places=2)
-    created_at = models.DateTimeField(auto_now_add=True)
+    created_at = models.DateTimeField(default=timezone.now, auto_now_add=True)
 
 class OrderItem(models.Model):
     order = models.ForeignKey(Order, on_delete=models.CASCADE, related_name='items')
