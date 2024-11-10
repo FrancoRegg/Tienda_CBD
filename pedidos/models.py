@@ -2,7 +2,7 @@ from django.db import models
 
 # Create your models here.
 class Order(models.Model):
-    user = models.ForeignKey('usuarios.Users', on_delete=models.CASCADE)
+    user = models.ForeignKey('usuarios.User', on_delete=models.CASCADE)
     shipping_address = models.ForeignKey('usuarios.Address', on_delete=models.SET_NULL, null=True)
     status = models.CharField(max_length=50, default='Pending')
     total = models.DecimalField(max_digits=10, decimal_places=2)
@@ -24,7 +24,7 @@ class OrderTracking(models.Model):
     notes = models.TextField(blank=True, null=True)
 
 class Cart(models.Model):
-    user = models.ForeignKey('usuarios.Users', on_delete=models.CASCADE)
+    user = models.ForeignKey('usuarios.User', on_delete=models.CASCADE)
     created_at = models.DateTimeField(auto_now_add=True)
 
 class CartItem(models.Model):
