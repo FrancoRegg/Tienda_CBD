@@ -1,13 +1,10 @@
 from django.shortcuts import render
 # Create your views here.
-from rest_framework import viewsets
-from .models import Product, Category
-from .serializers import ProductoSerializer, CategoriaSerializer
+from rest_framework.decorators import api_view
+from rest_framework.response import Response
 
-class CategoryViewSet(viewsets.ModelViewSet):
-    queryset = Category.objects.all()
-    serializer_class = CategoriaSerializer
+@api_view(['GET'])
+def prueba_ruta(request):
+    if request.method == 'GET':
+        return Response ({'message':'Hola'})
 
-class ProductViewSet(viewsets.ModelViewSet):
-    queryset = Product.objects.all()
-    serializer_class = ProductoSerializer
