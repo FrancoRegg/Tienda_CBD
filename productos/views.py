@@ -4,7 +4,7 @@ from rest_framework.decorators import api_view
 from rest_framework.response import Response
 
 @api_view(['GET'])
-def prueba_ruta(request):
+def productos(request):
     if request.method == 'GET':
-        return Response ({'message':'Hola'})
+        return Response ({'message':'PRODUCTOS'})
 
