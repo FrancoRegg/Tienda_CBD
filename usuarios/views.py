@@ -53,6 +53,10 @@ def update_user(request, pk):
 
 #RECUPERAR CONTRASEÑA DE USUARIO
 
+#REGISTRO DE USUARIO
+
+#lOGIN DE USUARIO
+
 #ELIMINAR USUARIO
 @api_view(['DELETE'])
 def delete_user(request, pk):
@@ -72,5 +76,11 @@ def delete_user(request, pk):
 #CREAR DIRECCION PARA USUARIO
 
 #MOSTRAR DIRECCION DE USUARIO
+@api_view(['GET'])
+def get_address(request):
+
+    address = Address.objects.all()
+    address_serializer = AddressSerializer(address, many=True)
+    return Response(address_serializer.data)
 
 #ACTUALIZAR DIRECCION
