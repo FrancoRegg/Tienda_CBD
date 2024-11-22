@@ -7,7 +7,9 @@ function Home() {
     return(
         <Layout>
            <NavBar/>
-            HOME
+           <div className="py-20">
+           <img src="/logo192.png" alt="Logo" />
+           </div>
             <Footer/>
         </Layout>
     )
