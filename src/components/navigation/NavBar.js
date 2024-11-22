@@ -11,11 +11,11 @@ function NavBar(){
                     <Link to='/'>Logo de Marca</Link>
                 </div>
                 <div className="nav-container-categorias">
-                    <Link to=''className="categorias">Categoria 1</Link>
-                    <Link to=''className="categorias">Categoria 2</Link>
-                    <Link to=''className="categorias">Categoria 3</Link>
-                    <Link to=''className="categorias">Categoria 4</Link>
-                    <Link to=''className="categorias">Categoria 5</Link>
+                    <Link to='/categoria1'className="categorias">Categoria 1</Link>
+                    <Link to='/categoria2'className="categorias">Categoria 2</Link>
+                    <Link to='/categoria3'className="categorias">Categoria 3</Link>
+                    <Link to='/categoria4'className="categorias">Categoria 4</Link>
+                    <Link to='/categoria5'className="categorias">Categoria 5</Link>
                 </div>
                 <div className="nav-container-usuario">
                     <Link to=''><i class="bi bi-person-circle icon"></i></Link>
