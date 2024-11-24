@@ -2,7 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
+.body{
     margin: 0;
     box-sizing: border-box;
+    background-color: #FFF8DC
 }
+/*#FFF4E6*/
