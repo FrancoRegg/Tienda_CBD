@@ -1,11 +1,10 @@
 .nav{
     width: 100%;
     position: fixed;
-    
 }
 
 .nav-container{
-    background: white;
+    background: #32CD32;
     box-shadow: 0px 3px 5px 0px rgb(51, 50, 51, 0.75);
     padding: 1rem 0rem;
 }
@@ -40,20 +39,33 @@
 }
 
 .icon{
-    font-size: 1.5rem;
+    font-size: 2rem;
+    background-color: #FFD700;
 }
+.bi{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .categorias{
     font-family: "Nunito Sans", sans-serif;
     font-optical-sizing: auto;
     font-size: 1.3rem;
     text-transform: uppercase;
-    color: black;
+    color: #2F4F4F;
     font-weight: 700;
     font-style: normal;
+    transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1), color 0.5s ease;
 }
 .categorias:hover{
-    text-decoration: underline;
+    transform: scale(1.2);
+    color: #A8D5BA
 }
 .categorias.active{
-    text-decoration: underline;
+    color: #A8D5BA;
+    font-size: 1.5rem;
 }
