@@ -4,7 +4,8 @@
 }
 
 .nav-container{
-    background: #32CD32;
+    background: #ffb503b8;
+    /*background: #FFB503;*/
     box-shadow: 0px 3px 5px 0px rgb(51, 50, 51, 0.75);
     padding: 1rem 0rem;
 }
@@ -25,7 +26,9 @@
     width: auto;
     height: 80px;
     max-height: 100%;
-    border-radius: 20px;
+    /*box-shadow: 0px 0px 8px 1px rgb(0, 0, 0, 0.35) inset;*/
+    box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.35);
+    border-radius: 8%;
 }
 
 .nav-container-categorias{
@@ -35,20 +38,24 @@
 
 .nav-container-usuario{
     display: flex;
-    gap: 1.3rem;
+    gap: 1.5rem;
 }
 
 .icon{
-    font-size: 2rem;
-    background-color: #FFD700;
-}
+    font-size: 2rem;}
+    /*background-color: #FFD700;*/
+
 .bi{
-    width: 70px;
-    height: 70px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
+    color: #000000;
+}
+.bi:hover{
+    color: #d4ebde;
 }
 
 .categorias{
@@ -56,16 +63,16 @@
     font-optical-sizing: auto;
     font-size: 1.3rem;
     text-transform: uppercase;
-    color: #2F4F4F;
+    color: #000000;
     font-weight: 700;
     font-style: normal;
     transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1), color 0.5s ease;
 }
 .categorias:hover{
     transform: scale(1.2);
-    color: #A8D5BA
+    color: rgb(100, 109, 81)
 }
 .categorias.active{
-    color: #A8D5BA;
+    color: rgb(100, 109, 81);
     font-size: 1.5rem;
 }
