@@ -1,7 +1,8 @@
 import { connect } from "react-redux"
 import './../../styles/NavBar.css'
 import { Link, NavLink } from "react-router-dom"
-import logo from "./../../assets/image/logocbd.png"
+//import logo1 from "./../../assets/image/logocbd.png"
+import logo from "./../../assets/image/logocbd-sin-fondo.png"
 
 function NavBar(){
     return(
