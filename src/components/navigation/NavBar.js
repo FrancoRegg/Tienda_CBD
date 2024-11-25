@@ -13,11 +13,11 @@ function NavBar(){
                     <Link to='/'><img src={logo} alt="Leafy" className="nav-imagen"/></Link>
                 </div>
                 <div className="nav-container-categorias">
-                    <NavLink to='/categoria1'className="categorias">Categoria 1</NavLink>
-                    <NavLink to='/categoria2'className="categorias">Categoria 2</NavLink>
-                    <NavLink to='/categoria3'className="categorias">Categoria 3</NavLink>
-                    <NavLink to='/categoria4'className="categorias">Categoria 4</NavLink>
-                    <NavLink to='/categoria5'className="categorias">Categoria 5</NavLink>
+                    <NavLink to='/flores-cbd'className="categorias">flores cbd</NavLink>
+                    <NavLink to='/aceite-cbd'className="categorias">aceite cbd</NavLink>
+                    <NavLink to='/vaper-cbd'className="categorias">vaper cbd</NavLink>
+                    <NavLink to='/pack-cbd'className="categorias">packs cbd</NavLink>
+                    <NavLink to='/fisioterapia-cbd'className="categorias">fisioterapia cbd</NavLink>
                 </div>
                 <div className="nav-container-usuario">
                     <Link to=''><i class="bi bi-person-circle icon"></i></Link>
