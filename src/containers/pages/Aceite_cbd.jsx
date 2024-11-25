@@ -7,7 +7,7 @@ function AceiteCbd() {
     return(
         <Layout>
            <NavBar/>
-           <div className="py-20">
+           <div className="pt-28">
             ACEITE CBD
             </div>
             <Footer/>

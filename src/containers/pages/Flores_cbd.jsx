@@ -7,7 +7,7 @@ function FloresCbd() {
     return(
         <Layout>
            <NavBar/>
-           <div className="py-20">
+           <div className="pt-28">
             FLORESCBD
             </div>
             <Footer/>

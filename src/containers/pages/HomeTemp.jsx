@@ -7,10 +7,10 @@ function Home() {
     return(
         <Layout>
            <NavBar/>
-           <div className="py-20">
-           <img src="/logo192.png" alt="Logo" />
+           <div className="pt-28">
+           PAGINA INICIO
            </div>
-            <Footer/>
+           <Footer/>
         </Layout>
     )
 }

@@ -7,7 +7,7 @@ function VaperCbd() {
     return(
         <Layout>
            <NavBar/>
-           <div className="py-20">
+           <div className="pt-28">
             VAPERS CBD
             </div>
             <Footer/>

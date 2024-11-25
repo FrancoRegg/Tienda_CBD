@@ -7,7 +7,7 @@ function FisioCbd() {
     return(
         <Layout>
            <NavBar/>
-           <div className="py-20">
+           <div className="pt-28">
             FISIOTERAPIA CBD
             </div>
             <Footer/>

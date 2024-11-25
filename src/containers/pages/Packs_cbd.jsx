@@ -7,7 +7,7 @@ function PackCbd() {
     return(
         <Layout>
            <NavBar/>
-           <div className="py-20">
+           <div className="pt-28">
             PACKS CBD
             </div>
             <Footer/>
