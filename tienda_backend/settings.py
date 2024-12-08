@@ -44,19 +44,18 @@ PROJECT_APPS = [
 THIRD_PARTY_APPS = [
     'rest_framework',
     'corsheaders',
-    'ckeditor',
-    'ckeditor_uploader'
+    'django_ckeditor_5'
 ]
 
 INSTALLED_APPS = DJANGO_APPS + PROJECT_APPS + THIRD_PARTY_APPS
 
-CKEDITOR_CONFIG = {
+CKEDITOR_5_CONFIG = {
     'default': {
         'toolbar': 'full',
         'autoParagraph': False
     }
 }
-CKEDITOR_UPLOAD_PATH = "/media/"
+CKEDITOR_5_UPLOAD_PATH = "/media/"
 
 
 MIDDLEWARE = [
@@ -149,12 +148,11 @@ STATIC_URL = '/static/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
 
-'''
+
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'build/static')
 ]
 
-'''
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
